@@ -58,6 +58,10 @@ require_once('function.php');
 //       echo '</ul></li>';
 //   }
 
-$nombre = 50;
+// $nombre = 20;
 
-number($nombre);
+// number($nombre);
+
+$nb=5;
+
+afficheInput($nb);
