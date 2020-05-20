@@ -58,4 +58,6 @@ require_once('function.php');
 //       echo '</ul></li>';
 //   }
 
+$nombre = 50;
+
 number($nombre);
