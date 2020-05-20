@@ -1,4 +1,6 @@
 <?php
+require_once('function.php');
+
 
 /* AFFICHER DE 1 en 1  */
 
@@ -55,3 +57,5 @@
 //       }
 //       echo '</ul></li>';
 //   }
+
+number();
