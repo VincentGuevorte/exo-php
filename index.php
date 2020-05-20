@@ -39,58 +39,22 @@
 //   $array2 = ["vehicules" => ['voiture', 'motos', 'avion']];
 //   $array3 = ["pays" => ['italie', 'france', 'belgique']];
 
-?>
+  $array1 = ["fruits" => ['pomme', 'poire', 'banane']];
+  $array2 = ["vehicules" => ['voiture', 'motos', 'avion']];
+  $array3 = ["pays" => ['italie', 'france', 'belgique']];
 
-<!DOCTYPE html>
-<html lang="en">
+$arrayGlobal = array_merge($array1, $array2, $array3);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  var_dump($arrayGlobal);
 
-<body>
+  echo '<ul>';
+  foreach($arrayGlobal as $key => $array)
+  {
 
-
-    <ul>
-        <li>FRUITS
-        </li>
-        <ul>
-            <li>POMME
-            </li>
-            <li>POIRE
-            </li>
-            <li>BANANE
-            </li>
-        </ul>
-        <li>VEHICULES
-        </li>
-        <ul>
-            <li>VOITURE
-            </li>
-            <li>MOTO
-            </li>
-            <li>AVION
-            </li>
-        </ul>
-        <li>PAYS
-        </li>
-        <ul>
-            <li>FRANCE
-            </li>
-            <li>ITALIE
-            </li>
-            <li>BELGIQUE
-            </li>
-        </ul>
-    </ul>
-
-
-
-
-
-
-</body>
-
-</html>
+      echo '<li>'.$key . '<ul>';
+      foreach($array as $value)
+      {
+          echo '<li>'.$value . '</li>';
+      }
+      echo '</ul></li>';
+  }
