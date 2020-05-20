@@ -1,9 +1,9 @@
 <?php
 
-function number()
+function number($nombre)
 {
 
-    for ($i = 1; $i <= 100; $i++) {
+    for ($i = 1; $i <= $nombre; $i++) {
 
         echo $i.' ';
     }
