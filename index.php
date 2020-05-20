@@ -62,6 +62,38 @@ require_once('function.php');
 
 // number($nombre);
 
-$nb=5;
+$nb = 5;
 
 afficheInput($nb);
+
+
+$array = array(
+    array('name' => 'nom', 'type' => 'text', "class" => 'modal'),
+    array('name' => 'prenom', 'type' => 'text', "class" => 'modal'),
+    array('name' => 'valider', 'type' => 'submit', "class" => 'btn')
+);
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+<form action="">
+    <?php
+    createForm($array);
+    ?>
+</form>

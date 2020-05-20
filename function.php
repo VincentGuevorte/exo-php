@@ -1,13 +1,13 @@
 <?php
 
-function number($nombre)
-{
+// function number($nombre)
+// {
 
-    for ($i = 1; $i <= $nombre; $i++) {
+//     for ($i = 1; $i <= $nombre; $i++) {
 
-        echo $i.' ';
-    }
-};
+//         echo $i.' ';
+//     }
+// };
 
 function afficheInput($nb){
 
@@ -16,4 +16,16 @@ function afficheInput($nb){
         echo 'input : <input></input><br>';
     }
 
+};
+
+function createForm($array){
+
+    foreach($array as $attribut){
+
+        echo '<input name="'.$attribut['name'].'" type="'.$attribut['type'].'"class="'.$attribut['class'].'"
+        placeholder="'.$attribut['name'].'"><br>';
+
+
+    }
 }
+
